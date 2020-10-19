@@ -15,8 +15,8 @@ class Item{
  
 @Component({
     selector: 'purchase-app',
-    styleUrls: ['./app.component.css'],
-    templateUrl: './app.component.html',
+    templateUrl: 'app.component.html',
+    styleUrls: ['./app.component.css']
 })
 
 export class AppComponent { 
@@ -35,5 +35,5 @@ export class AppComponent {
         if(text==null || text.trim()=="" || price==null)
             return;
         this.items.push(new Item(text, price));
-    } 
+    }
 }
